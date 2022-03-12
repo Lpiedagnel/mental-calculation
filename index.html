@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test your math skill with this application!</h1>
+        <button class="start-btn" id="start-btn">Start game</button>
+        <p class="commentary" id="commentary"></p>
+        <div class="calculs-container" id="calcul-container">
+            <p class="calcul hidden" id="calcul-field">10 * 2 = </p>
+            <input type="number" name="answers" class="answers-input hidden" id="input-field">
+            <input type="submit" value="Submit" class="submit-btn hidden" id="submit-btn">
+        </div>
+        <div class="points-count" id="points-count">Score: 0</div>
+        <p class="explications">Calcul with + or - = 1 point <br> Calcul with * or / = 2 points</p>
+        <div class="time-left">Time left: <span id="timer">00:00</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

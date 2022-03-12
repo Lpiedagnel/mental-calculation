@@ -1,0 +1,125 @@
+/* GLOBAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --dark-blue: rgb(12, 34, 61);
+    --regular-blue: rgb(24, 70, 126);
+    --regular-blue-lighter: rgb(39, 112, 201);
+    --text-yellow: rgb(239, 222, 28);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--text-yellow);
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* START MENU */
+
+.start-btn {
+    border: none;
+    width: 300px;
+    margin: 15px auto;
+    background-color: var(--regular-blue);
+    color: var(--text-yellow);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    background-color: var(--regular-blue-lighter);
+}
+
+.points-count, .time-left {
+    font-size: 1.3rem;
+    margin: 15px auto;
+    font-weight: bold;
+}
+
+/* Calcul Container */
+
+.calculs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+}
+
+.calculs-container .calcul {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.calculs-container .answers-input {
+    border: solid 2px var(--text-yellow);
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+    color: var(--text-yellow);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: auto;
+    letter-spacing: 2px;
+}
+
+.calculs-container .answers-input:focus {
+    outline: none;
+}
+
+/* Remove arrow on input number */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.calculs-container .submit-btn {
+    border: none;
+    width: 125px;
+    margin: 20px;
+    background-color: var(--regular-blue);
+    color: var(--text-yellow);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calculs-container .submit-btn:hover {
+    cursor: pointer;
+    background-color: var(--regular-blue-lighter);
+}
+
+.commentary {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
