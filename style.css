@@ -1,4 +1,4 @@
-/* GLOBAL */
+/***** GLOBAL *****/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -15,6 +15,12 @@ body {
     color: var(--text-yellow);
 }
 
+.hidden {
+    display: none;
+}
+
+/* CONTAINER */
+
 .container {
     width: 100%;
     max-width: 900px;
@@ -25,9 +31,6 @@ body {
     text-align: center;
 }
 
-.hidden {
-    display: none;
-}
 
 /* START MENU */
 
@@ -54,9 +57,10 @@ body {
     font-weight: bold;
 }
 
-/* Calcul Container */
 
-.calculs-container {
+/* CALCULATION CONTAINER */
+
+.calculation-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,12 +68,12 @@ body {
     letter-spacing: 2px;
 }
 
-.calculs-container .calcul {
+.calculation-container .calculation {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.calculs-container .answers-input {
+.calculation-container .answers-input {
     border: solid 2px var(--text-yellow);
     border-radius: 10px;
     background-color: var(--dark-blue);
@@ -83,7 +87,7 @@ body {
     letter-spacing: 2px;
 }
 
-.calculs-container .answers-input:focus {
+.calculation-container .answers-input:focus {
     outline: none;
 }
 
@@ -102,7 +106,7 @@ input[type=number] {
 }
 
 
-.calculs-container .submit-btn {
+.calculation-container .submit-btn {
     border: none;
     width: 125px;
     margin: 20px;
@@ -114,7 +118,7 @@ input[type=number] {
     border-radius: 10px;
 }
 
-.calculs-container .submit-btn:hover {
+.calculation-container .submit-btn:hover {
     cursor: pointer;
     background-color: var(--regular-blue-lighter);
 }
